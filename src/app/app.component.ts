@@ -4,7 +4,7 @@ import { RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
-  template: `<p>ALAN</p> <router-outlet />`,
+  template: `<router-outlet />`,
 })
 export class AppComponent {
   title = 'lista-tarefas';
