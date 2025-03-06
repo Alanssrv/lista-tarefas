@@ -25,6 +25,8 @@
             <app-input-list-item
                 [inputListItems]="listItemsStage('pending')"
                 (outputUpdateItemCheckbox)="updateItemCheckbox($event)"
+                (outputUpdateItemValue)="updateItemValue($event)"
+                (outputDeleteItem)="deleteItem($event)"
             />
         }
 
@@ -33,13 +35,15 @@
             <app-input-list-item
                 [inputListItems]="listItemsStage('completed')"
                 (outputUpdateItemCheckbox)="updateItemCheckbox($event)"
+                (outputUpdateItemValue)="updateItemValue($event)"
+                (outputDeleteItem)="deleteItem($event)"
             />
         }
 
     </main>
     <footer>
         <button class="btn btn-danger" (click)="deleteAllItems()">
-            Deletar items
+            Deletar itens
         </button>
     </footer>
 }
